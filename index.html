@@ -24,7 +24,7 @@
   --font-b:   'DM Sans', sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--bg); color: var(--ink); font-family: var(--font-b); font-size: 11px; font-weight: 300; padding: 28px 30px 56px; min-height: 100vh; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-b); font-size: 13px; font-weight: 300; padding: 28px 30px 56px; min-height: 100vh; }
 
 .header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--border2); flex-wrap: wrap; gap: 12px; }
 .brand-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
@@ -44,31 +44,31 @@ h1 em { font-style: italic; color: var(--accent); }
 .region-block { display: none; }
 .region-block.active { display: block; }
 
-.tbl-scroll { overflow-x: auto; border-radius: 4px; box-shadow: 0 2px 12px rgba(44,36,22,0.07); }
-.ns-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 11px; }
+.tbl-scroll { overflow-x: auto; border-radius: 4px; box-shadow: 0 2px 12px rgba(44,36,22,0.07); -webkit-overflow-scrolling: touch; }
+.ns-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 14px; }
 
-.ns-table .period-row th { background: var(--accent); color: #fff; font-family: var(--font-d); font-size: 16px; font-weight: 400; letter-spacing: 0.08em; text-align: center; padding: 10px 8px 8px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 0.5px solid rgba(255,255,255,0.18); }
+.ns-table .period-row th { background: var(--accent); color: #fff; font-family: var(--font-d); font-size: 18px; font-weight: 400; letter-spacing: 0.08em; text-align: center; padding: 10px 8px 8px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 0.5px solid rgba(255,255,255,0.18); }
 .ns-table .period-row th.dark-header { background: var(--ink); }
-.ns-table .period-row th:first-child { text-align: left; padding-left: 12px; min-width: 180px; position: sticky; left: 0; z-index: 3; background: var(--accent); border-right: 1px solid rgba(255,255,255,0.2); box-shadow: 2px 0 8px rgba(44,36,22,0.12); }
+.ns-table .period-row th:first-child { text-align: left; padding-left: 12px; min-width: 150px; max-width: 150px; position: sticky; left: 0; z-index: 10; background: var(--accent); border-right: 2px solid rgba(255,255,255,0.5); box-shadow: 4px 0 12px rgba(44,36,22,0.25); }
 
-.ns-table .sub-row th { background: var(--bg2); font-size: 9px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--muted); text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--border); font-weight: 400; white-space: nowrap; }
-.ns-table .sub-row th:first-child { text-align: left; padding-left: 12px; font-style: italic; position: sticky; left: 0; z-index: 3; background: var(--bg2); border-right: 1px solid var(--border2); box-shadow: 2px 0 8px rgba(44,36,22,0.08); }
-.ns-table .sub-row .rf-th { color: var(--accent); }
+.ns-table .sub-row th { background: var(--bg2); font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--border); font-weight: 500; white-space: nowrap; }
+.ns-table .sub-row th:first-child { text-align: left; padding-left: 12px; font-style: italic; position: sticky; left: 0; z-index: 10; background: var(--bg2); border-right: 2px solid var(--border2); box-shadow: 4px 0 12px rgba(44,36,22,0.18); font-size: 11px; }
+.ns-table .sub-row .act-th { color: var(--accent); }
 
 .ns-table tbody tr { transition: background 0.12s; }
-.ns-table td { padding: 8px 8px; text-align: right; border-bottom: 0.5px solid rgba(139,94,60,0.08); color: var(--ink2); white-space: nowrap; background: var(--panel); }
-.ns-table td:first-child { text-align: left; padding-left: 12px; font-size: 12px; color: var(--ink); font-weight: 400; position: sticky; left: 0; z-index: 2; background: var(--panel); border-right: 1px solid var(--border2); box-shadow: 2px 0 8px rgba(44,36,22,0.06); }
+.ns-table td { padding: 11px 12px; text-align: right; border-bottom: 0.5px solid rgba(139,94,60,0.08); color: var(--ink2); white-space: nowrap; background: var(--panel); }
+.ns-table td:first-child { text-align: left; padding-left: 14px; font-size: 14px; color: var(--ink); font-weight: 500; min-width: 150px; max-width: 150px; white-space: normal; word-break: break-word; position: sticky; left: 0; z-index: 10; background: var(--panel); border-right: 2px solid var(--border2); box-shadow: 4px 0 12px rgba(44,36,22,0.18); }
 .ns-table tbody tr:hover td { background: rgba(139,94,60,0.04); }
-.ns-table tbody tr:hover td:first-child { background: rgba(139,94,60,0.07); }
+.ns-table tbody tr:hover td:first-child { background: #F5EFE4; }
 
-.ns-table tr.total-row td { border-top: 1px solid var(--border2); border-bottom: none; font-weight: 500; color: var(--accent); background: var(--bg2); padding-top: 9px; padding-bottom: 9px; }
-.ns-table tr.total-row td:first-child { font-family: var(--font-d); font-size: 13px; color: var(--ink); letter-spacing: 0.05em; text-transform: uppercase; background: #E8DFD0; }
+.ns-table tr.total-row td { border-top: 1.5px solid var(--border2); border-bottom: none; font-weight: 700; color: var(--accent); background: var(--bg2); padding-top: 13px; padding-bottom: 13px; font-size: 15px; }
+.ns-table tr.total-row td:first-child { font-family: var(--font-d); font-size: 15px; color: var(--ink); letter-spacing: 0.05em; text-transform: uppercase; background: #E8DFD0; min-width: 150px; max-width: 150px; white-space: normal; word-break: break-word; }
 
 .sep-left { border-left: 1.5px solid var(--border2) !important; }
-.pos-val { color: var(--pos); }
-.neg-val { color: var(--neg); }
+.pos-val { color: var(--pos); font-weight: 600; }
+.neg-val { color: var(--neg); font-weight: 600; }
 .muted-val { color: var(--muted-lt); }
-.rf-val { color: var(--accent); font-weight: 500; }
+.act-val { color: var(--accent); font-weight: 700; font-size: 15px; }
 
 .cell-wrap { display: flex; align-items: center; }
 .cmt-btn { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; border-radius: 50%; background: rgba(139,94,60,0.12); border: 0.5px solid var(--accent-lt); color: var(--accent); font-size: 8px; font-weight: 600; cursor: pointer; margin-left: 6px; flex-shrink: 0; transition: all 0.15s; line-height: 1; }
@@ -94,6 +94,20 @@ h1 em { font-style: italic; color: var(--accent); }
 .cmt-list li::before { content: '–'; position: absolute; left: 0; color: var(--accent-lt); }
 .cmt-list strong { color: var(--ink); font-weight: 500; }
 
+
+@media (max-width: 600px) {
+  body { padding: 16px 12px 48px; }
+  h1 { font-size: 28px; }
+  .ns-table { font-size: 13px; }
+  .ns-table .period-row th { font-size: 14px; padding: 8px 6px; }
+  .ns-table .sub-row th { font-size: 10px; padding: 5px 7px; }
+  .ns-table td { padding: 9px 8px; }
+  .ns-table td:first-child { font-size: 13px; min-width: 130px; max-width: 130px; padding-left: 10px; }
+  .ns-table .period-row th:first-child { min-width: 130px; max-width: 130px; }
+  .ns-table tr.total-row td:first-child { font-size: 13px; min-width: 130px; max-width: 130px; }
+  .ns-table tr.total-row td { font-size: 13px; }
+  .act-val { font-size: 13px; }
+}
 </style>
 </head>
 <body>
@@ -129,15 +143,15 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
   <tr class="period-row"><th>ARGENTINA</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="act-th">ACT26 €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="act-th">ACT26 €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('arg-a',event)">i</button></div></td><td class="rf-val">3,2</td><td class="pos-val">+28,4%</td><td class="sep-left">6,1</td><td>9,0</td><td class="rf-val">7,3</td><td class="pos-val">+1,2</td><td class="neg-val">-0,8%</td><td class="neg-val">-1,5</td><td class="neg-val">-16,8%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('arg-b',event)">i</button></div></td><td class="rf-val">2,5</td><td class="pos-val">+55,0%</td><td class="sep-left">4,2</td><td>6,0</td><td class="rf-val">4,5</td><td class="pos-val">+0,6</td><td class="pos-val">+1,2%</td><td class="neg-val">-1,0</td><td class="neg-val">-16,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('arg-c',event)">i</button></div></td><td class="rf-val">0,8</td><td class="neg-val">-12,0%</td><td class="sep-left">1,8</td><td>2,1</td><td class="rf-val">1,6</td><td class="neg-val">-0,2</td><td class="pos-val">+0,4%</td><td class="neg-val">-0,5</td><td class="neg-val">-22,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('arg-d',event)">i</button></div></td><td class="rf-val">1,1</td><td class="pos-val">+320,0%</td><td class="sep-left">0,5</td><td>0,9</td><td class="rf-val">1,2</td><td class="pos-val">+0,7</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,4</td><td class="pos-val">+40,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('arg-e',event)">i</button></div></td><td class="rf-val">0,3</td><td class="neg-val">-18,0%</td><td class="sep-left">0,6</td><td>0,4</td><td class="rf-val">0,4</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-18,0%</td></tr>
-  <tr class="total-row"><td>Total Argentina</td><td class="rf-val">7,9</td><td class="pos-val">+32,0%</td><td class="sep-left">13,2</td><td>18,4</td><td class="rf-val">15,0</td><td class="pos-val">+2,2</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,7</td><td class="neg-val">-17,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('arg-a',event)">i</button></div></td><td class="act-val">3,2</td><td class="pos-val">+28,4%</td><td class="sep-left">6,1</td><td>9,0</td><td class="act-val">7,3</td><td class="pos-val">+1,2</td><td class="neg-val">-0,8%</td><td class="neg-val">-1,5</td><td class="neg-val">-16,8%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('arg-b',event)">i</button></div></td><td class="act-val">2,5</td><td class="pos-val">+55,0%</td><td class="sep-left">4,2</td><td>6,0</td><td class="act-val">4,5</td><td class="pos-val">+0,6</td><td class="pos-val">+1,2%</td><td class="neg-val">-1,0</td><td class="neg-val">-16,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('arg-c',event)">i</button></div></td><td class="act-val">0,8</td><td class="neg-val">-12,0%</td><td class="sep-left">1,8</td><td>2,1</td><td class="act-val">1,6</td><td class="neg-val">-0,2</td><td class="pos-val">+0,4%</td><td class="neg-val">-0,5</td><td class="neg-val">-22,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('arg-d',event)">i</button></div></td><td class="act-val">1,1</td><td class="pos-val">+320,0%</td><td class="sep-left">0,5</td><td>0,9</td><td class="act-val">1,2</td><td class="pos-val">+0,7</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,4</td><td class="pos-val">+40,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('arg-e',event)">i</button></div></td><td class="act-val">0,3</td><td class="neg-val">-18,0%</td><td class="sep-left">0,6</td><td>0,4</td><td class="act-val">0,4</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-18,0%</td></tr>
+  <tr class="total-row"><td>Total Argentina</td><td class="act-val">7,9</td><td class="pos-val">+32,0%</td><td class="sep-left">13,2</td><td>18,4</td><td class="act-val">15,0</td><td class="pos-val">+2,2</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,7</td><td class="neg-val">-17,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -146,15 +160,15 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
   <tr class="period-row"><th>CONO SUR</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="act-th">ACT26 €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="act-th">ACT26 €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('cs-a',event)">i</button></div></td><td class="rf-val">1,8</td><td class="pos-val">+12,0%</td><td class="sep-left">3,5</td><td>4,1</td><td class="rf-val">4,0</td><td class="pos-val">+0,5</td><td class="pos-val">+1,5%</td><td class="pos-val">+0,2</td><td class="pos-val">+4,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('cs-b',event)">i</button></div></td><td class="rf-val">2,8</td><td class="pos-val">+48,0%</td><td class="sep-left">4,1</td><td>5,0</td><td class="rf-val">4,8</td><td class="pos-val">+1,2</td><td class="neg-val">-4,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('cs-c',event)">i</button></div></td><td class="rf-val">0,5</td><td class="neg-val">-6,0%</td><td class="sep-left">0,8</td><td>1,1</td><td class="rf-val">0,9</td><td class="pos-val">+0,1</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-7,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('cs-d',event)">i</button></div></td><td class="rf-val">0,7</td><td class="pos-val">+2,0%</td><td class="sep-left">1,2</td><td>1,6</td><td class="rf-val">1,4</td><td class="pos-val">+0,3</td><td class="pos-val">+5,0%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('cs-e',event)">i</button></div></td><td class="rf-val">0,4</td><td class="pos-val">+38,0%</td><td class="sep-left">0,7</td><td>0,6</td><td class="rf-val">0,8</td><td class="pos-val">+0,2</td><td class="neg-val">-0,6%</td><td class="pos-val">+0,3</td><td class="pos-val">+55,0%</td></tr>
-  <tr class="total-row"><td>Total Cono Sur</td><td class="rf-val">6,2</td><td class="pos-val">+28,0%</td><td class="sep-left">10,3</td><td>12,4</td><td class="rf-val">11,9</td><td class="pos-val">+2,3</td><td class="neg-val">-2,0%</td><td class="pos-val">+1,2</td><td class="pos-val">+9,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('cs-a',event)">i</button></div></td><td class="act-val">1,8</td><td class="pos-val">+12,0%</td><td class="sep-left">3,5</td><td>4,1</td><td class="act-val">4,0</td><td class="pos-val">+0,5</td><td class="pos-val">+1,5%</td><td class="pos-val">+0,2</td><td class="pos-val">+4,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('cs-b',event)">i</button></div></td><td class="act-val">2,8</td><td class="pos-val">+48,0%</td><td class="sep-left">4,1</td><td>5,0</td><td class="act-val">4,8</td><td class="pos-val">+1,2</td><td class="neg-val">-4,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('cs-c',event)">i</button></div></td><td class="act-val">0,5</td><td class="neg-val">-6,0%</td><td class="sep-left">0,8</td><td>1,1</td><td class="act-val">0,9</td><td class="pos-val">+0,1</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-7,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('cs-d',event)">i</button></div></td><td class="act-val">0,7</td><td class="pos-val">+2,0%</td><td class="sep-left">1,2</td><td>1,6</td><td class="act-val">1,4</td><td class="pos-val">+0,3</td><td class="pos-val">+5,0%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('cs-e',event)">i</button></div></td><td class="act-val">0,4</td><td class="pos-val">+38,0%</td><td class="sep-left">0,7</td><td>0,6</td><td class="act-val">0,8</td><td class="pos-val">+0,2</td><td class="neg-val">-0,6%</td><td class="pos-val">+0,3</td><td class="pos-val">+55,0%</td></tr>
+  <tr class="total-row"><td>Total Cono Sur</td><td class="act-val">6,2</td><td class="pos-val">+28,0%</td><td class="sep-left">10,3</td><td>12,4</td><td class="act-val">11,9</td><td class="pos-val">+2,3</td><td class="neg-val">-2,0%</td><td class="pos-val">+1,2</td><td class="pos-val">+9,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -163,15 +177,15 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
   <tr class="period-row"><th>HUB ANDINO</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="act-th">ACT26 €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="act-th">ACT26 €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('and-a',event)">i</button></div></td><td class="rf-val">2,1</td><td class="pos-val">+18,0%</td><td class="sep-left">4,0</td><td>5,2</td><td class="rf-val">4,9</td><td class="pos-val">+0,8</td><td class="pos-val">+3,5%</td><td class="neg-val">-0,3</td><td class="neg-val">-5,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('and-b',event)">i</button></div></td><td class="rf-val">1,4</td><td class="pos-val">+22,0%</td><td class="sep-left">2,5</td><td>3,0</td><td class="rf-val">2,8</td><td class="pos-val">+0,4</td><td class="neg-val">-5,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('and-c',event)">i</button></div></td><td class="rf-val">1,0</td><td class="pos-val">+8,0%</td><td class="sep-left">2,0</td><td>2,5</td><td class="rf-val">2,3</td><td class="pos-val">+0,3</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-8,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('and-d',event)">i</button></div></td><td class="rf-val">0,6</td><td class="neg-val">-5,0%</td><td class="sep-left">1,1</td><td>1,3</td><td class="rf-val">1,1</td><td class="pos-val">+0,0</td><td class="neg-val">-3,0%</td><td class="neg-val">-0,2</td><td class="neg-val">-11,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('and-e',event)">i</button></div></td><td class="rf-val">0,3</td><td class="pos-val">+12,0%</td><td class="sep-left">0,5</td><td>0,5</td><td class="rf-val">0,5</td><td class="pos-val">+0,1</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,0</td><td class="pos-val">+4,0%</td></tr>
-  <tr class="total-row"><td>Total Hub Andino</td><td class="rf-val">5,4</td><td class="pos-val">+14,5%</td><td class="sep-left">10,1</td><td>12,5</td><td class="rf-val">11,6</td><td class="pos-val">+1,6</td><td class="neg-val">-1,0%</td><td class="neg-val">-0,8</td><td class="neg-val">-6,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('and-a',event)">i</button></div></td><td class="act-val">2,1</td><td class="pos-val">+18,0%</td><td class="sep-left">4,0</td><td>5,2</td><td class="act-val">4,9</td><td class="pos-val">+0,8</td><td class="pos-val">+3,5%</td><td class="neg-val">-0,3</td><td class="neg-val">-5,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('and-b',event)">i</button></div></td><td class="act-val">1,4</td><td class="pos-val">+22,0%</td><td class="sep-left">2,5</td><td>3,0</td><td class="act-val">2,8</td><td class="pos-val">+0,4</td><td class="neg-val">-5,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('and-c',event)">i</button></div></td><td class="act-val">1,0</td><td class="pos-val">+8,0%</td><td class="sep-left">2,0</td><td>2,5</td><td class="act-val">2,3</td><td class="pos-val">+0,3</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-8,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('and-d',event)">i</button></div></td><td class="act-val">0,6</td><td class="neg-val">-5,0%</td><td class="sep-left">1,1</td><td>1,3</td><td class="act-val">1,1</td><td class="pos-val">+0,0</td><td class="neg-val">-3,0%</td><td class="neg-val">-0,2</td><td class="neg-val">-11,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('and-e',event)">i</button></div></td><td class="act-val">0,3</td><td class="pos-val">+12,0%</td><td class="sep-left">0,5</td><td>0,5</td><td class="act-val">0,5</td><td class="pos-val">+0,1</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,0</td><td class="pos-val">+4,0%</td></tr>
+  <tr class="total-row"><td>Total Hub Andino</td><td class="act-val">5,4</td><td class="pos-val">+14,5%</td><td class="sep-left">10,1</td><td>12,5</td><td class="act-val">11,6</td><td class="pos-val">+1,6</td><td class="neg-val">-1,0%</td><td class="neg-val">-0,8</td><td class="neg-val">-6,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -180,15 +194,15 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
   <tr class="period-row"><th>BRASIL</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="act-th">ACT26 €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="act-th">ACT26 €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('bra-a',event)">i</button></div></td><td class="rf-val">5,8</td><td class="pos-val">+9,5%</td><td class="sep-left">11,5</td><td>14,5</td><td class="rf-val">13,4</td><td class="pos-val">+1,8</td><td class="neg-val">-2,8%</td><td class="neg-val">-1,1</td><td class="neg-val">-7,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('bra-b',event)">i</button></div></td><td class="rf-val">3,2</td><td class="pos-val">+14,0%</td><td class="sep-left">6,2</td><td>7,8</td><td class="rf-val">7,2</td><td class="pos-val">+1,0</td><td class="neg-val">-1,2%</td><td class="neg-val">-0,6</td><td class="neg-val">-7,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('bra-c',event)">i</button></div></td><td class="rf-val">2,1</td><td class="pos-val">+6,0%</td><td class="sep-left">4,5</td><td>5,5</td><td class="rf-val">5,0</td><td class="pos-val">+0,6</td><td class="neg-val">-1,8%</td><td class="neg-val">-0,4</td><td class="neg-val">-7,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('bra-d',event)">i</button></div></td><td class="rf-val">1,5</td><td class="pos-val">+22,0%</td><td class="sep-left">2,8</td><td>3,8</td><td class="rf-val">3,6</td><td class="pos-val">+0,8</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-4,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('bra-e',event)">i</button></div></td><td class="rf-val">0,8</td><td class="pos-val">+18,0%</td><td class="sep-left">1,5</td><td>1,6</td><td class="rf-val">1,7</td><td class="pos-val">+0,2</td><td class="neg-val">-1,2%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
-  <tr class="total-row"><td>Total Brasil</td><td class="rf-val">13,4</td><td class="pos-val">+11,5%</td><td class="sep-left">26,5</td><td>33,2</td><td class="rf-val">30,9</td><td class="pos-val">+4,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-2,1</td><td class="neg-val">-6,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('bra-a',event)">i</button></div></td><td class="act-val">5,8</td><td class="pos-val">+9,5%</td><td class="sep-left">11,5</td><td>14,5</td><td class="act-val">13,4</td><td class="pos-val">+1,8</td><td class="neg-val">-2,8%</td><td class="neg-val">-1,1</td><td class="neg-val">-7,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('bra-b',event)">i</button></div></td><td class="act-val">3,2</td><td class="pos-val">+14,0%</td><td class="sep-left">6,2</td><td>7,8</td><td class="act-val">7,2</td><td class="pos-val">+1,0</td><td class="neg-val">-1,2%</td><td class="neg-val">-0,6</td><td class="neg-val">-7,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('bra-c',event)">i</button></div></td><td class="act-val">2,1</td><td class="pos-val">+6,0%</td><td class="sep-left">4,5</td><td>5,5</td><td class="act-val">5,0</td><td class="pos-val">+0,6</td><td class="neg-val">-1,8%</td><td class="neg-val">-0,4</td><td class="neg-val">-7,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('bra-d',event)">i</button></div></td><td class="act-val">1,5</td><td class="pos-val">+22,0%</td><td class="sep-left">2,8</td><td>3,8</td><td class="act-val">3,6</td><td class="pos-val">+0,8</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-4,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('bra-e',event)">i</button></div></td><td class="act-val">0,8</td><td class="pos-val">+18,0%</td><td class="sep-left">1,5</td><td>1,6</td><td class="act-val">1,7</td><td class="pos-val">+0,2</td><td class="neg-val">-1,2%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
+  <tr class="total-row"><td>Total Brasil</td><td class="act-val">13,4</td><td class="pos-val">+11,5%</td><td class="sep-left">26,5</td><td>33,2</td><td class="act-val">30,9</td><td class="pos-val">+4,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-2,1</td><td class="neg-val">-6,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -197,15 +211,15 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
   <tr class="period-row"><th>MÉXICO</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="act-th">ACT26 €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="act-th">ACT26 €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('mex-a',event)">i</button></div></td><td class="rf-val">4,5</td><td class="pos-val">+16,0%</td><td class="sep-left">8,5</td><td>11,0</td><td class="rf-val">10,0</td><td class="pos-val">+1,5</td><td class="pos-val">+2,0%</td><td class="neg-val">-1,0</td><td class="neg-val">-9,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('mex-b',event)">i</button></div></td><td class="rf-val">2,8</td><td class="pos-val">+20,0%</td><td class="sep-left">5,0</td><td>6,8</td><td class="rf-val">6,1</td><td class="pos-val">+1,0</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,7</td><td class="neg-val">-10,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('mex-c',event)">i</button></div></td><td class="rf-val">1,8</td><td class="pos-val">+12,0%</td><td class="sep-left">3,5</td><td>4,5</td><td class="rf-val">4,0</td><td class="pos-val">+0,6</td><td class="neg-val">-2,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-10,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('mex-d',event)">i</button></div></td><td class="rf-val">1,2</td><td class="pos-val">+35,0%</td><td class="sep-left">2,0</td><td>2,9</td><td class="rf-val">2,8</td><td class="pos-val">+0,8</td><td class="pos-val">+6,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-2,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('mex-e',event)">i</button></div></td><td class="rf-val">0,6</td><td class="pos-val">+8,0%</td><td class="sep-left">1,2</td><td>1,3</td><td class="rf-val">1,3</td><td class="pos-val">+0,1</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,1</td><td class="pos-val">+4,0%</td></tr>
-  <tr class="total-row"><td>Total México</td><td class="rf-val">10,9</td><td class="pos-val">+17,5%</td><td class="sep-left">20,2</td><td>26,5</td><td class="rf-val">24,2</td><td class="pos-val">+4,0</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,3</td><td class="neg-val">-8,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('mex-a',event)">i</button></div></td><td class="act-val">4,5</td><td class="pos-val">+16,0%</td><td class="sep-left">8,5</td><td>11,0</td><td class="act-val">10,0</td><td class="pos-val">+1,5</td><td class="pos-val">+2,0%</td><td class="neg-val">-1,0</td><td class="neg-val">-9,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('mex-b',event)">i</button></div></td><td class="act-val">2,8</td><td class="pos-val">+20,0%</td><td class="sep-left">5,0</td><td>6,8</td><td class="act-val">6,1</td><td class="pos-val">+1,0</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,7</td><td class="neg-val">-10,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('mex-c',event)">i</button></div></td><td class="act-val">1,8</td><td class="pos-val">+12,0%</td><td class="sep-left">3,5</td><td>4,5</td><td class="act-val">4,0</td><td class="pos-val">+0,6</td><td class="neg-val">-2,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-10,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('mex-d',event)">i</button></div></td><td class="act-val">1,2</td><td class="pos-val">+35,0%</td><td class="sep-left">2,0</td><td>2,9</td><td class="act-val">2,8</td><td class="pos-val">+0,8</td><td class="pos-val">+6,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-2,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('mex-e',event)">i</button></div></td><td class="act-val">0,6</td><td class="pos-val">+8,0%</td><td class="sep-left">1,2</td><td>1,3</td><td class="act-val">1,3</td><td class="pos-val">+0,1</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,1</td><td class="pos-val">+4,0%</td></tr>
+  <tr class="total-row"><td>Total México</td><td class="act-val">10,9</td><td class="pos-val">+17,5%</td><td class="sep-left">20,2</td><td>26,5</td><td class="act-val">24,2</td><td class="pos-val">+4,0</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,3</td><td class="neg-val">-8,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -214,15 +228,15 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
   <tr class="period-row"><th>TOTAL LATAM</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="act-th">ACT26 €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="act-th">ACT26 €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span></div></td><td class="rf-val">17,4</td><td class="pos-val">+14,5%</td><td class="sep-left">33,1</td><td>43,8</td><td class="rf-val">39,6</td><td class="pos-val">+5,3</td><td class="neg-val">-0,5%</td><td class="neg-val">-4,1</td><td class="neg-val">-9,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span></div></td><td class="rf-val">10,7</td><td class="pos-val">+30,0%</td><td class="sep-left">22,0</td><td>27,6</td><td class="rf-val">25,4</td><td class="pos-val">+3,2</td><td class="neg-val">-2,8%</td><td class="neg-val">-2,4</td><td class="neg-val">-8,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="rf-val">6,2</td><td class="pos-val">+5,5%</td><td class="sep-left">12,6</td><td>15,7</td><td class="rf-val">13,8</td><td class="pos-val">+1,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-1,6</td><td class="neg-val">-10,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="rf-val">4,4</td><td class="pos-val">+42,0%</td><td class="sep-left">7,6</td><td>10,5</td><td class="rf-val">9,7</td><td class="pos-val">+2,3</td><td class="pos-val">+4,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-5,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">2,0</td><td class="pos-val">+18,0%</td><td class="sep-left">4,0</td><td>4,4</td><td class="rf-val">4,4</td><td class="pos-val">+0,6</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,5%</td></tr>
-  <tr class="total-row"><td>Total Latam</td><td class="rf-val">40,7</td><td class="pos-val">+18,5%</td><td class="sep-left">79,3</td><td>102,0</td><td class="rf-val">92,9</td><td class="pos-val">+14,8</td><td class="neg-val">-0,8%</td><td class="neg-val">-9,0</td><td class="neg-val">-8,8%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span></div></td><td class="act-val">17,4</td><td class="pos-val">+14,5%</td><td class="sep-left">33,1</td><td>43,8</td><td class="act-val">39,6</td><td class="pos-val">+5,3</td><td class="neg-val">-0,5%</td><td class="neg-val">-4,1</td><td class="neg-val">-9,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span></div></td><td class="act-val">10,7</td><td class="pos-val">+30,0%</td><td class="sep-left">22,0</td><td>27,6</td><td class="act-val">25,4</td><td class="pos-val">+3,2</td><td class="neg-val">-2,8%</td><td class="neg-val">-2,4</td><td class="neg-val">-8,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="act-val">6,2</td><td class="pos-val">+5,5%</td><td class="sep-left">12,6</td><td>15,7</td><td class="act-val">13,8</td><td class="pos-val">+1,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-1,6</td><td class="neg-val">-10,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="act-val">4,4</td><td class="pos-val">+42,0%</td><td class="sep-left">7,6</td><td>10,5</td><td class="act-val">9,7</td><td class="pos-val">+2,3</td><td class="pos-val">+4,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-5,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="act-val">2,0</td><td class="pos-val">+18,0%</td><td class="sep-left">4,0</td><td>4,4</td><td class="act-val">4,4</td><td class="pos-val">+0,6</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,5%</td></tr>
+  <tr class="total-row"><td>Total Latam</td><td class="act-val">40,7</td><td class="pos-val">+18,5%</td><td class="sep-left">79,3</td><td>102,0</td><td class="act-val">92,9</td><td class="pos-val">+14,8</td><td class="neg-val">-0,8%</td><td class="neg-val">-9,0</td><td class="neg-val">-8,8%</td></tr>
 </tbody>
 </table></div></div>
 
