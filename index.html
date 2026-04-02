@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NS by Producto — Marzo & Q1 · Galo Corp</title>
+<title>NS by Producto — Marzo & Q1 · FY26 · Galo Comunidad</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -29,18 +29,15 @@ body { background: var(--bg); color: var(--ink); font-family: var(--font-b); fon
 .header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--border2); flex-wrap: wrap; gap: 12px; }
 .brand-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .brand-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); opacity: 0.85; }
-.brand-name { font-family: var(--font-b); font-size: 10px; letter-spacing: 0.22em; color: var(--accent); text-transform: uppercase; }
-h1 { font-family: var(--font-d); font-size: 26px; font-weight: 400; color: var(--ink); line-height: 1.15; }
+.brand-name { font-family: var(--font-b); font-size: 13px; letter-spacing: 0.22em; color: var(--accent); text-transform: uppercase; }
+h1 { font-family: var(--font-d); font-size: 42px; font-weight: 400; color: var(--ink); line-height: 1.15; }
 h1 em { font-style: italic; color: var(--accent); }
 .tags { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
 .tag { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); background: rgba(139,94,60,0.08); border: 0.5px solid var(--border2); padding: 3px 9px; border-radius: 2px; }
 .warm-line { height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent-lt), transparent); margin-bottom: 18px; }
 
-.export-btn { display: flex; align-items: center; gap: 7px; padding: 9px 18px; margin-top: 10px; background: var(--accent); border: none; color: #fff; font-family: var(--font-b); font-size: 11px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; border-radius: 2px; white-space: nowrap; }
-.export-btn:hover { background: var(--ink); }
-
 .region-nav { display: flex; gap: 2px; margin-bottom: 18px; border-bottom: 1.5px solid var(--border2); flex-wrap: wrap; }
-.rtab { padding: 8px 14px; border: none; border-bottom: 2.5px solid transparent; background: transparent; color: var(--muted); font-family: var(--font-b); font-size: 10px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.18s; margin-bottom: -1.5px; }
+.rtab { padding: 8px 14px; border: none; border-bottom: 2.5px solid transparent; background: transparent; color: var(--muted); font-family: var(--font-b); font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.18s; margin-bottom: -1.5px; }
 .rtab:hover { color: var(--ink); }
 .rtab.on { color: var(--accent); border-bottom-color: var(--accent); font-weight: 500; }
 
@@ -50,9 +47,9 @@ h1 em { font-style: italic; color: var(--accent); }
 .tbl-scroll { overflow-x: auto; border-radius: 4px; box-shadow: 0 2px 12px rgba(44,36,22,0.07); }
 .ns-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 11px; }
 
-.ns-table .period-row th { background: var(--accent); color: #fff; font-family: var(--font-d); font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-align: center; padding: 10px 8px 8px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 0.5px solid rgba(255,255,255,0.18); }
+.ns-table .period-row th { background: var(--accent); color: #fff; font-family: var(--font-d); font-size: 16px; font-weight: 400; letter-spacing: 0.08em; text-align: center; padding: 10px 8px 8px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 0.5px solid rgba(255,255,255,0.18); }
 .ns-table .period-row th.dark-header { background: var(--ink); }
-.ns-table .period-row th:first-child { text-align: left; padding-left: 12px; min-width: 160px; position: sticky; left: 0; z-index: 3; background: var(--accent); border-right: 1px solid rgba(255,255,255,0.2); box-shadow: 2px 0 8px rgba(44,36,22,0.12); }
+.ns-table .period-row th:first-child { text-align: left; padding-left: 12px; min-width: 180px; position: sticky; left: 0; z-index: 3; background: var(--accent); border-right: 1px solid rgba(255,255,255,0.2); box-shadow: 2px 0 8px rgba(44,36,22,0.12); }
 
 .ns-table .sub-row th { background: var(--bg2); font-size: 9px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--muted); text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--border); font-weight: 400; white-space: nowrap; }
 .ns-table .sub-row th:first-child { text-align: left; padding-left: 12px; font-style: italic; position: sticky; left: 0; z-index: 3; background: var(--bg2); border-right: 1px solid var(--border2); box-shadow: 2px 0 8px rgba(44,36,22,0.08); }
@@ -97,8 +94,6 @@ h1 em { font-style: italic; color: var(--accent); }
 .cmt-list li::before { content: '–'; position: absolute; left: 0; color: var(--accent-lt); }
 .cmt-list strong { color: var(--ink); font-weight: 500; }
 
-.export-toast { display: none; position: fixed; bottom: 24px; right: 24px; z-index: 999; background: var(--ink); border-radius: 4px; padding: 10px 18px; font-size: 11px; color: #fff; letter-spacing: 0.05em; }
-.export-toast.show { display: block; }
 </style>
 </head>
 <body>
@@ -107,23 +102,17 @@ h1 em { font-style: italic; color: var(--accent); }
   <div>
     <div class="brand-row">
       <div class="brand-dot"></div>
-      <span class="brand-name">Galo Corp</span>
+      <span class="brand-name">Galo Comunidad</span>
     </div>
     <h1>NS by <em>Producto</em></h1>
     <div class="tags">
-      <span class="tag">Latam Region · @2024 fx · € MM</span>
-      <span class="tag">Draft Mar 25</span>
+      <span class="tag">Latam Region · @2025 fx · € MM</span>
+      <span class="tag">Draft Mar 26</span>
+      <span class="tag">FY26</span>
       <span class="tag">Marzo &amp; Q1</span>
     </div>
   </div>
-  <div>
-    <button class="export-btn" id="exportBtn">
-      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0"><path d="M8 2v8M5 7l3 3 3-3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2"/></svg>
-      Exportar Excel
-    </button>
-  </div>
 </div>
-<div class="export-toast" id="exportToast"></div>
 <div class="warm-line"></div>
 
 <div class="region-nav">
@@ -139,16 +128,16 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="region-block active" id="block-arg">
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
-  <tr class="period-row"><th>ARGENTINA</th><th colspan="3">Marzo</th><th colspan="9" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2024 fx</th><th class="rf-th">RF €MM</th><th>vs A24 %</th><th>vs LE</th><th class="sep-left">A24 €MM</th><th>LE €MM</th><th>BUD25 €MM</th><th class="rf-th">RF €MM</th><th>vs A24 €MM</th><th>vs A24 %</th><th>vs LE €MM</th><th>vs LE %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="period-row"><th>ARGENTINA</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('arg-a',event)">i</button></div></td><td class="rf-val">3,2</td><td class="pos-val">+28,4%</td><td class="neg-val">-1,2%</td><td class="sep-left">6,1</td><td>7,4</td><td>9,0</td><td class="rf-val">7,3</td><td class="pos-val">+1,2</td><td class="pos-val">+19,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-0,8%</td><td class="neg-val">-1,5</td><td class="neg-val">-16,8%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('arg-b',event)">i</button></div></td><td class="rf-val">2,5</td><td class="pos-val">+55,0%</td><td class="pos-val">+0,2%</td><td class="sep-left">4,2</td><td>5,1</td><td>6,0</td><td class="rf-val">4,5</td><td class="pos-val">+0,6</td><td class="pos-val">+14,0%</td><td class="pos-val">+0,1</td><td class="pos-val">+1,2%</td><td class="neg-val">-1,0</td><td class="neg-val">-16,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('arg-c',event)">i</button></div></td><td class="rf-val">0,8</td><td class="neg-val">-12,0%</td><td class="pos-val">+0,9%</td><td class="sep-left">1,8</td><td>1,5</td><td>2,1</td><td class="rf-val">1,6</td><td class="neg-val">-0,2</td><td class="neg-val">-9,5%</td><td class="pos-val">+0,1</td><td class="pos-val">+0,4%</td><td class="neg-val">-0,5</td><td class="neg-val">-22,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('arg-d',event)">i</button></div></td><td class="rf-val">1,1</td><td class="pos-val">+320,0%</td><td class="neg-val">-3,5%</td><td class="sep-left">0,5</td><td>1,3</td><td>0,9</td><td class="rf-val">1,2</td><td class="pos-val">+0,7</td><td class="pos-val">+145,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,4</td><td class="pos-val">+40,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">0,3</td><td class="neg-val">-18,0%</td><td class="neg-val">-8,0%</td><td class="sep-left">0,6</td><td>0,5</td><td>0,4</td><td class="rf-val">0,4</td><td class="neg-val">-0,1</td><td class="neg-val">-22,0%</td><td class="neg-val">-0,0</td><td class="neg-val">-4,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-18,0%</td></tr>
-  <tr class="total-row"><td>Total Argentina</td><td class="rf-val">7,9</td><td class="pos-val">+32,0%</td><td class="pos-val">+0,2%</td><td class="sep-left">13,2</td><td>15,8</td><td>18,4</td><td class="rf-val">15,0</td><td class="pos-val">+2,2</td><td class="pos-val">+16,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,7</td><td class="neg-val">-17,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('arg-a',event)">i</button></div></td><td class="rf-val">3,2</td><td class="pos-val">+28,4%</td><td class="sep-left">6,1</td><td>9,0</td><td class="rf-val">7,3</td><td class="pos-val">+1,2</td><td class="neg-val">-0,8%</td><td class="neg-val">-1,5</td><td class="neg-val">-16,8%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('arg-b',event)">i</button></div></td><td class="rf-val">2,5</td><td class="pos-val">+55,0%</td><td class="sep-left">4,2</td><td>6,0</td><td class="rf-val">4,5</td><td class="pos-val">+0,6</td><td class="pos-val">+1,2%</td><td class="neg-val">-1,0</td><td class="neg-val">-16,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('arg-c',event)">i</button></div></td><td class="rf-val">0,8</td><td class="neg-val">-12,0%</td><td class="sep-left">1,8</td><td>2,1</td><td class="rf-val">1,6</td><td class="neg-val">-0,2</td><td class="pos-val">+0,4%</td><td class="neg-val">-0,5</td><td class="neg-val">-22,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('arg-d',event)">i</button></div></td><td class="rf-val">1,1</td><td class="pos-val">+320,0%</td><td class="sep-left">0,5</td><td>0,9</td><td class="rf-val">1,2</td><td class="pos-val">+0,7</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,4</td><td class="pos-val">+40,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('arg-e',event)">i</button></div></td><td class="rf-val">0,3</td><td class="neg-val">-18,0%</td><td class="sep-left">0,6</td><td>0,4</td><td class="rf-val">0,4</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-18,0%</td></tr>
+  <tr class="total-row"><td>Total Argentina</td><td class="rf-val">7,9</td><td class="pos-val">+32,0%</td><td class="sep-left">13,2</td><td>18,4</td><td class="rf-val">15,0</td><td class="pos-val">+2,2</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,7</td><td class="neg-val">-17,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -156,16 +145,16 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="region-block" id="block-cs">
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
-  <tr class="period-row"><th>CONO SUR</th><th colspan="3">Marzo</th><th colspan="9" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2024 fx</th><th class="rf-th">RF €MM</th><th>vs A24 %</th><th>vs LE</th><th class="sep-left">A24 €MM</th><th>LE €MM</th><th>BUD25 €MM</th><th class="rf-th">RF €MM</th><th>vs A24 €MM</th><th>vs A24 %</th><th>vs LE €MM</th><th>vs LE %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="period-row"><th>CONO SUR</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('cs-a',event)">i</button></div></td><td class="rf-val">1,8</td><td class="pos-val">+12,0%</td><td class="pos-val">+2,5%</td><td class="sep-left">3,5</td><td>3,9</td><td>4,1</td><td class="rf-val">4,0</td><td class="pos-val">+0,5</td><td class="pos-val">+13,5%</td><td class="pos-val">+0,1</td><td class="pos-val">+1,5%</td><td class="pos-val">+0,2</td><td class="pos-val">+4,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('cs-b',event)">i</button></div></td><td class="rf-val">2,8</td><td class="pos-val">+48,0%</td><td class="neg-val">-6,5%</td><td class="sep-left">4,1</td><td>5,9</td><td>5,0</td><td class="rf-val">4,8</td><td class="pos-val">+1,2</td><td class="pos-val">+28,0%</td><td class="neg-val">-0,2</td><td class="neg-val">-4,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="rf-val">0,5</td><td class="neg-val">-6,0%</td><td class="neg-val">-11,0%</td><td class="sep-left">0,8</td><td>0,9</td><td>1,1</td><td class="rf-val">0,9</td><td class="pos-val">+0,1</td><td class="pos-val">+18,0%</td><td class="neg-val">-0,0</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-7,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('cs-d',event)">i</button></div></td><td class="rf-val">0,7</td><td class="pos-val">+2,0%</td><td class="pos-val">+9,5%</td><td class="sep-left">1,2</td><td>1,5</td><td>1,6</td><td class="rf-val">1,4</td><td class="pos-val">+0,3</td><td class="pos-val">+22,0%</td><td class="pos-val">+0,0</td><td class="pos-val">+5,0%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">0,4</td><td class="pos-val">+38,0%</td><td class="neg-val">-1,8%</td><td class="sep-left">0,7</td><td>0,8</td><td>0,6</td><td class="rf-val">0,8</td><td class="pos-val">+0,2</td><td class="pos-val">+16,0%</td><td class="neg-val">-0,0</td><td class="neg-val">-0,6%</td><td class="pos-val">+0,3</td><td class="pos-val">+55,0%</td></tr>
-  <tr class="total-row"><td>Total Cono Sur</td><td class="rf-val">6,2</td><td class="pos-val">+28,0%</td><td class="neg-val">-3,5%</td><td class="sep-left">10,3</td><td>13,0</td><td>12,4</td><td class="rf-val">11,9</td><td class="pos-val">+2,3</td><td class="pos-val">+21,5%</td><td class="neg-val">-0,3</td><td class="neg-val">-2,0%</td><td class="pos-val">+1,2</td><td class="pos-val">+9,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('cs-a',event)">i</button></div></td><td class="rf-val">1,8</td><td class="pos-val">+12,0%</td><td class="sep-left">3,5</td><td>4,1</td><td class="rf-val">4,0</td><td class="pos-val">+0,5</td><td class="pos-val">+1,5%</td><td class="pos-val">+0,2</td><td class="pos-val">+4,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('cs-b',event)">i</button></div></td><td class="rf-val">2,8</td><td class="pos-val">+48,0%</td><td class="sep-left">4,1</td><td>5,0</td><td class="rf-val">4,8</td><td class="pos-val">+1,2</td><td class="neg-val">-4,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('cs-c',event)">i</button></div></td><td class="rf-val">0,5</td><td class="neg-val">-6,0%</td><td class="sep-left">0,8</td><td>1,1</td><td class="rf-val">0,9</td><td class="pos-val">+0,1</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-7,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('cs-d',event)">i</button></div></td><td class="rf-val">0,7</td><td class="pos-val">+2,0%</td><td class="sep-left">1,2</td><td>1,6</td><td class="rf-val">1,4</td><td class="pos-val">+0,3</td><td class="pos-val">+5,0%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('cs-e',event)">i</button></div></td><td class="rf-val">0,4</td><td class="pos-val">+38,0%</td><td class="sep-left">0,7</td><td>0,6</td><td class="rf-val">0,8</td><td class="pos-val">+0,2</td><td class="neg-val">-0,6%</td><td class="pos-val">+0,3</td><td class="pos-val">+55,0%</td></tr>
+  <tr class="total-row"><td>Total Cono Sur</td><td class="rf-val">6,2</td><td class="pos-val">+28,0%</td><td class="sep-left">10,3</td><td>12,4</td><td class="rf-val">11,9</td><td class="pos-val">+2,3</td><td class="neg-val">-2,0%</td><td class="pos-val">+1,2</td><td class="pos-val">+9,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -173,16 +162,16 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="region-block" id="block-andino">
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
-  <tr class="period-row"><th>HUB ANDINO</th><th colspan="3">Marzo</th><th colspan="9" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2024 fx</th><th class="rf-th">RF €MM</th><th>vs A24 %</th><th>vs LE</th><th class="sep-left">A24 €MM</th><th>LE €MM</th><th>BUD25 €MM</th><th class="rf-th">RF €MM</th><th>vs A24 €MM</th><th>vs A24 %</th><th>vs LE €MM</th><th>vs LE %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="period-row"><th>HUB ANDINO</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('and-a',event)">i</button></div></td><td class="rf-val">2,1</td><td class="pos-val">+18,0%</td><td class="pos-val">+1,5%</td><td class="sep-left">4,0</td><td>4,8</td><td>5,2</td><td class="rf-val">4,9</td><td class="pos-val">+0,8</td><td class="pos-val">+20,0%</td><td class="pos-val">+0,2</td><td class="pos-val">+3,5%</td><td class="neg-val">-0,3</td><td class="neg-val">-5,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span></div></td><td class="rf-val">1,4</td><td class="pos-val">+22,0%</td><td class="neg-val">-3,0%</td><td class="sep-left">2,5</td><td>3,2</td><td>3,0</td><td class="rf-val">2,8</td><td class="pos-val">+0,4</td><td class="pos-val">+16,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-5,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('and-c',event)">i</button></div></td><td class="rf-val">1,0</td><td class="pos-val">+8,0%</td><td class="pos-val">+4,5%</td><td class="sep-left">2,0</td><td>2,2</td><td>2,5</td><td class="rf-val">2,3</td><td class="pos-val">+0,3</td><td class="pos-val">+14,0%</td><td class="pos-val">+0,1</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-8,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="rf-val">0,6</td><td class="neg-val">-5,0%</td><td class="neg-val">-2,5%</td><td class="sep-left">1,1</td><td>1,2</td><td>1,3</td><td class="rf-val">1,1</td><td class="pos-val">+0,0</td><td class="pos-val">+1,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-3,0%</td><td class="neg-val">-0,2</td><td class="neg-val">-11,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">0,3</td><td class="pos-val">+12,0%</td><td class="neg-val">-4,0%</td><td class="sep-left">0,5</td><td>0,6</td><td>0,5</td><td class="rf-val">0,5</td><td class="pos-val">+0,1</td><td class="pos-val">+10,0%</td><td class="neg-val">-0,0</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,0</td><td class="pos-val">+4,0%</td></tr>
-  <tr class="total-row"><td>Total Hub Andino</td><td class="rf-val">5,4</td><td class="pos-val">+14,5%</td><td class="neg-val">-0,8%</td><td class="sep-left">10,1</td><td>12,0</td><td>12,5</td><td class="rf-val">11,6</td><td class="pos-val">+1,6</td><td class="pos-val">+15,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-1,0%</td><td class="neg-val">-0,8</td><td class="neg-val">-6,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('and-a',event)">i</button></div></td><td class="rf-val">2,1</td><td class="pos-val">+18,0%</td><td class="sep-left">4,0</td><td>5,2</td><td class="rf-val">4,9</td><td class="pos-val">+0,8</td><td class="pos-val">+3,5%</td><td class="neg-val">-0,3</td><td class="neg-val">-5,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('and-b',event)">i</button></div></td><td class="rf-val">1,4</td><td class="pos-val">+22,0%</td><td class="sep-left">2,5</td><td>3,0</td><td class="rf-val">2,8</td><td class="pos-val">+0,4</td><td class="neg-val">-5,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-4,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('and-c',event)">i</button></div></td><td class="rf-val">1,0</td><td class="pos-val">+8,0%</td><td class="sep-left">2,0</td><td>2,5</td><td class="rf-val">2,3</td><td class="pos-val">+0,3</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-8,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('and-d',event)">i</button></div></td><td class="rf-val">0,6</td><td class="neg-val">-5,0%</td><td class="sep-left">1,1</td><td>1,3</td><td class="rf-val">1,1</td><td class="pos-val">+0,0</td><td class="neg-val">-3,0%</td><td class="neg-val">-0,2</td><td class="neg-val">-11,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('and-e',event)">i</button></div></td><td class="rf-val">0,3</td><td class="pos-val">+12,0%</td><td class="sep-left">0,5</td><td>0,5</td><td class="rf-val">0,5</td><td class="pos-val">+0,1</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,0</td><td class="pos-val">+4,0%</td></tr>
+  <tr class="total-row"><td>Total Hub Andino</td><td class="rf-val">5,4</td><td class="pos-val">+14,5%</td><td class="sep-left">10,1</td><td>12,5</td><td class="rf-val">11,6</td><td class="pos-val">+1,6</td><td class="neg-val">-1,0%</td><td class="neg-val">-0,8</td><td class="neg-val">-6,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -190,16 +179,16 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="region-block" id="block-brasil">
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
-  <tr class="period-row"><th>BRASIL</th><th colspan="3">Marzo</th><th colspan="9" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2024 fx</th><th class="rf-th">RF €MM</th><th>vs A24 %</th><th>vs LE</th><th class="sep-left">A24 €MM</th><th>LE €MM</th><th>BUD25 €MM</th><th class="rf-th">RF €MM</th><th>vs A24 €MM</th><th>vs A24 %</th><th>vs LE €MM</th><th>vs LE %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="period-row"><th>BRASIL</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('bra-a',event)">i</button></div></td><td class="rf-val">5,8</td><td class="pos-val">+9,5%</td><td class="neg-val">-2,0%</td><td class="sep-left">11,5</td><td>13,8</td><td>14,5</td><td class="rf-val">13,4</td><td class="pos-val">+1,8</td><td class="pos-val">+15,5%</td><td class="neg-val">-0,4</td><td class="neg-val">-2,8%</td><td class="neg-val">-1,1</td><td class="neg-val">-7,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('bra-b',event)">i</button></div></td><td class="rf-val">3,2</td><td class="pos-val">+14,0%</td><td class="pos-val">+1,5%</td><td class="sep-left">6,2</td><td>7,5</td><td>7,8</td><td class="rf-val">7,2</td><td class="pos-val">+1,0</td><td class="pos-val">+16,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-1,2%</td><td class="neg-val">-0,6</td><td class="neg-val">-7,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="rf-val">2,1</td><td class="pos-val">+6,0%</td><td class="pos-val">+0,5%</td><td class="sep-left">4,5</td><td>5,2</td><td>5,5</td><td class="rf-val">5,0</td><td class="pos-val">+0,6</td><td class="pos-val">+12,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-1,8%</td><td class="neg-val">-0,4</td><td class="neg-val">-7,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="rf-val">1,5</td><td class="pos-val">+22,0%</td><td class="pos-val">+3,0%</td><td class="sep-left">2,8</td><td>3,5</td><td>3,8</td><td class="rf-val">3,6</td><td class="pos-val">+0,8</td><td class="pos-val">+28,5%</td><td class="pos-val">+0,2</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-4,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">0,8</td><td class="pos-val">+18,0%</td><td class="neg-val">-1,0%</td><td class="sep-left">1,5</td><td>1,8</td><td>1,6</td><td class="rf-val">1,7</td><td class="pos-val">+0,2</td><td class="pos-val">+14,5%</td><td class="neg-val">-0,0</td><td class="neg-val">-1,2%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
-  <tr class="total-row"><td>Total Brasil</td><td class="rf-val">13,4</td><td class="pos-val">+11,5%</td><td class="neg-val">-0,5%</td><td class="sep-left">26,5</td><td>31,8</td><td>33,2</td><td class="rf-val">30,9</td><td class="pos-val">+4,4</td><td class="pos-val">+16,5%</td><td class="neg-val">-0,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-2,1</td><td class="neg-val">-6,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('bra-a',event)">i</button></div></td><td class="rf-val">5,8</td><td class="pos-val">+9,5%</td><td class="sep-left">11,5</td><td>14,5</td><td class="rf-val">13,4</td><td class="pos-val">+1,8</td><td class="neg-val">-2,8%</td><td class="neg-val">-1,1</td><td class="neg-val">-7,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('bra-b',event)">i</button></div></td><td class="rf-val">3,2</td><td class="pos-val">+14,0%</td><td class="sep-left">6,2</td><td>7,8</td><td class="rf-val">7,2</td><td class="pos-val">+1,0</td><td class="neg-val">-1,2%</td><td class="neg-val">-0,6</td><td class="neg-val">-7,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('bra-c',event)">i</button></div></td><td class="rf-val">2,1</td><td class="pos-val">+6,0%</td><td class="sep-left">4,5</td><td>5,5</td><td class="rf-val">5,0</td><td class="pos-val">+0,6</td><td class="neg-val">-1,8%</td><td class="neg-val">-0,4</td><td class="neg-val">-7,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('bra-d',event)">i</button></div></td><td class="rf-val">1,5</td><td class="pos-val">+22,0%</td><td class="sep-left">2,8</td><td>3,8</td><td class="rf-val">3,6</td><td class="pos-val">+0,8</td><td class="pos-val">+4,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-4,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('bra-e',event)">i</button></div></td><td class="rf-val">0,8</td><td class="pos-val">+18,0%</td><td class="sep-left">1,5</td><td>1,6</td><td class="rf-val">1,7</td><td class="pos-val">+0,2</td><td class="neg-val">-1,2%</td><td class="pos-val">+0,2</td><td class="pos-val">+10,5%</td></tr>
+  <tr class="total-row"><td>Total Brasil</td><td class="rf-val">13,4</td><td class="pos-val">+11,5%</td><td class="sep-left">26,5</td><td>33,2</td><td class="rf-val">30,9</td><td class="pos-val">+4,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-2,1</td><td class="neg-val">-6,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -207,16 +196,16 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="region-block" id="block-mexico">
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
-  <tr class="period-row"><th>MÉXICO</th><th colspan="3">Marzo</th><th colspan="9" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2024 fx</th><th class="rf-th">RF €MM</th><th>vs A24 %</th><th>vs LE</th><th class="sep-left">A24 €MM</th><th>LE €MM</th><th>BUD25 €MM</th><th class="rf-th">RF €MM</th><th>vs A24 €MM</th><th>vs A24 %</th><th>vs LE €MM</th><th>vs LE %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="period-row"><th>MÉXICO</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('mex-a',event)">i</button></div></td><td class="rf-val">4,5</td><td class="pos-val">+16,0%</td><td class="pos-val">+2,0%</td><td class="sep-left">8,5</td><td>10,2</td><td>11,0</td><td class="rf-val">10,0</td><td class="pos-val">+1,5</td><td class="pos-val">+17,5%</td><td class="pos-val">+0,2</td><td class="pos-val">+2,0%</td><td class="neg-val">-1,0</td><td class="neg-val">-9,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span></div></td><td class="rf-val">2,8</td><td class="pos-val">+20,0%</td><td class="neg-val">-2,5%</td><td class="sep-left">5,0</td><td>6,5</td><td>6,8</td><td class="rf-val">6,1</td><td class="pos-val">+1,0</td><td class="pos-val">+21,5%</td><td class="neg-val">-0,3</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,7</td><td class="neg-val">-10,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="rf-val">1,8</td><td class="pos-val">+12,0%</td><td class="pos-val">+1,0%</td><td class="sep-left">3,5</td><td>4,2</td><td>4,5</td><td class="rf-val">4,0</td><td class="pos-val">+0,6</td><td class="pos-val">+16,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-2,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-10,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="rf-val">1,2</td><td class="pos-val">+35,0%</td><td class="pos-val">+5,0%</td><td class="sep-left">2,0</td><td>2,7</td><td>2,9</td><td class="rf-val">2,8</td><td class="pos-val">+0,8</td><td class="pos-val">+40,0%</td><td class="pos-val">+0,2</td><td class="pos-val">+6,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-2,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">0,6</td><td class="pos-val">+8,0%</td><td class="neg-val">-3,0%</td><td class="sep-left">1,2</td><td>1,5</td><td>1,3</td><td class="rf-val">1,3</td><td class="pos-val">+0,1</td><td class="pos-val">+8,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,1</td><td class="pos-val">+4,0%</td></tr>
-  <tr class="total-row"><td>Total México</td><td class="rf-val">10,9</td><td class="pos-val">+17,5%</td><td class="pos-val">+0,5%</td><td class="sep-left">20,2</td><td>25,1</td><td>26,5</td><td class="rf-val">24,2</td><td class="pos-val">+4,0</td><td class="pos-val">+19,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,3</td><td class="neg-val">-8,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span><button class="cmt-btn" onclick="openComment('mex-a',event)">i</button></div></td><td class="rf-val">4,5</td><td class="pos-val">+16,0%</td><td class="sep-left">8,5</td><td>11,0</td><td class="rf-val">10,0</td><td class="pos-val">+1,5</td><td class="pos-val">+2,0%</td><td class="neg-val">-1,0</td><td class="neg-val">-9,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span><button class="cmt-btn" onclick="openComment('mex-b',event)">i</button></div></td><td class="rf-val">2,8</td><td class="pos-val">+20,0%</td><td class="sep-left">5,0</td><td>6,8</td><td class="rf-val">6,1</td><td class="pos-val">+1,0</td><td class="neg-val">-4,5%</td><td class="neg-val">-0,7</td><td class="neg-val">-10,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span><button class="cmt-btn" onclick="openComment('mex-c',event)">i</button></div></td><td class="rf-val">1,8</td><td class="pos-val">+12,0%</td><td class="sep-left">3,5</td><td>4,5</td><td class="rf-val">4,0</td><td class="pos-val">+0,6</td><td class="neg-val">-2,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-10,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span><button class="cmt-btn" onclick="openComment('mex-d',event)">i</button></div></td><td class="rf-val">1,2</td><td class="pos-val">+35,0%</td><td class="sep-left">2,0</td><td>2,9</td><td class="rf-val">2,8</td><td class="pos-val">+0,8</td><td class="pos-val">+6,5%</td><td class="neg-val">-0,1</td><td class="neg-val">-2,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span><button class="cmt-btn" onclick="openComment('mex-e',event)">i</button></div></td><td class="rf-val">0,6</td><td class="pos-val">+8,0%</td><td class="sep-left">1,2</td><td>1,3</td><td class="rf-val">1,3</td><td class="pos-val">+0,1</td><td class="neg-val">-3,5%</td><td class="pos-val">+0,1</td><td class="pos-val">+4,0%</td></tr>
+  <tr class="total-row"><td>Total México</td><td class="rf-val">10,9</td><td class="pos-val">+17,5%</td><td class="sep-left">20,2</td><td>26,5</td><td class="rf-val">24,2</td><td class="pos-val">+4,0</td><td class="neg-val">-0,5%</td><td class="neg-val">-2,3</td><td class="neg-val">-8,5%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -224,16 +213,16 @@ h1 em { font-style: italic; color: var(--accent); }
 <div class="region-block" id="block-total">
 <div class="tbl-scroll"><table class="ns-table">
 <thead>
-  <tr class="period-row"><th>TOTAL LATAM</th><th colspan="3">Marzo</th><th colspan="9" class="dark-header sep-left">Q1</th></tr>
-  <tr class="sub-row"><th>@2024 fx</th><th class="rf-th">RF €MM</th><th>vs A24 %</th><th>vs LE</th><th class="sep-left">A24 €MM</th><th>LE €MM</th><th>BUD25 €MM</th><th class="rf-th">RF €MM</th><th>vs A24 €MM</th><th>vs A24 %</th><th>vs LE €MM</th><th>vs LE %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
+  <tr class="period-row"><th>TOTAL LATAM</th><th colspan="2">Marzo</th><th colspan="7" class="dark-header sep-left">Q1</th></tr>
+  <tr class="sub-row"><th>@2025 fx</th><th class="rf-th">RF €MM</th><th>vs A25 %</th><th class="sep-left">A25 €MM</th><th>BUD26 €MM</th><th class="rf-th">RF €MM</th><th>vs A25 €MM</th><th>vs A25 %</th><th>vs BUD €MM</th><th>vs BUD %</th></tr>
 </thead>
 <tbody>
-  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span></div></td><td class="rf-val">17,4</td><td class="pos-val">+14,5%</td><td class="neg-val">-0,5%</td><td class="sep-left">33,1</td><td>40,1</td><td>43,8</td><td class="rf-val">39,6</td><td class="pos-val">+5,3</td><td class="pos-val">+16,5%</td><td class="neg-val">-0,2</td><td class="neg-val">-0,5%</td><td class="neg-val">-4,1</td><td class="neg-val">-9,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Suspensión</span></div></td><td class="rf-val">10,7</td><td class="pos-val">+30,0%</td><td class="neg-val">-3,0%</td><td class="sep-left">22,0</td><td>27,2</td><td>27,6</td><td class="rf-val">25,4</td><td class="pos-val">+3,2</td><td class="pos-val">+17,5%</td><td class="neg-val">-0,8</td><td class="neg-val">-2,8%</td><td class="neg-val">-2,4</td><td class="neg-val">-8,5%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="rf-val">6,2</td><td class="pos-val">+5,5%</td><td class="neg-val">-1,0%</td><td class="sep-left">12,6</td><td>14,8</td><td>15,7</td><td class="rf-val">13,8</td><td class="pos-val">+1,4</td><td class="pos-val">+11,0%</td><td class="neg-val">-0,2</td><td class="neg-val">-1,5%</td><td class="neg-val">-1,6</td><td class="neg-val">-10,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="rf-val">4,4</td><td class="pos-val">+42,0%</td><td class="pos-val">+3,5%</td><td class="sep-left">7,6</td><td>9,7</td><td>10,5</td><td class="rf-val">9,7</td><td class="pos-val">+2,3</td><td class="pos-val">+30,5%</td><td class="pos-val">+0,4</td><td class="pos-val">+4,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-5,0%</td></tr>
-  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">2,0</td><td class="pos-val">+18,0%</td><td class="neg-val">-2,5%</td><td class="sep-left">4,0</td><td>5,0</td><td>4,4</td><td class="rf-val">4,4</td><td class="pos-val">+0,6</td><td class="pos-val">+12,0%</td><td class="neg-val">-0,1</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,5%</td></tr>
-  <tr class="total-row"><td>Total Latam</td><td class="rf-val">40,7</td><td class="pos-val">+18,5%</td><td class="neg-val">-0,8%</td><td class="sep-left">79,3</td><td>96,8</td><td>102,0</td><td class="rf-val">92,9</td><td class="pos-val">+14,8</td><td class="pos-val">+17,5%</td><td class="neg-val">-0,8</td><td class="neg-val">-0,8%</td><td class="neg-val">-9,0</td><td class="neg-val">-8,8%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Frenos & Discos</span></div></td><td class="rf-val">17,4</td><td class="pos-val">+14,5%</td><td class="sep-left">33,1</td><td>43,8</td><td class="rf-val">39,6</td><td class="pos-val">+5,3</td><td class="neg-val">-0,5%</td><td class="neg-val">-4,1</td><td class="neg-val">-9,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Suspensión</span></div></td><td class="rf-val">10,7</td><td class="pos-val">+30,0%</td><td class="sep-left">22,0</td><td>27,6</td><td class="rf-val">25,4</td><td class="pos-val">+3,2</td><td class="neg-val">-2,8%</td><td class="neg-val">-2,4</td><td class="neg-val">-8,5%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Filtros & Lubricantes</span></div></td><td class="rf-val">6,2</td><td class="pos-val">+5,5%</td><td class="sep-left">12,6</td><td>15,7</td><td class="rf-val">13,8</td><td class="pos-val">+1,4</td><td class="neg-val">-1,5%</td><td class="neg-val">-1,6</td><td class="neg-val">-10,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Electricidad & Encendido</span></div></td><td class="rf-val">4,4</td><td class="pos-val">+42,0%</td><td class="sep-left">7,6</td><td>10,5</td><td class="rf-val">9,7</td><td class="pos-val">+2,3</td><td class="pos-val">+4,0%</td><td class="neg-val">-0,5</td><td class="neg-val">-5,0%</td></tr>
+  <tr><td><div class="cell-wrap"><span>Accesorios</span></div></td><td class="rf-val">2,0</td><td class="pos-val">+18,0%</td><td class="sep-left">4,0</td><td>4,4</td><td class="rf-val">4,4</td><td class="pos-val">+0,6</td><td class="neg-val">-2,0%</td><td class="pos-val">+0,6</td><td class="pos-val">+13,5%</td></tr>
+  <tr class="total-row"><td>Total Latam</td><td class="rf-val">40,7</td><td class="pos-val">+18,5%</td><td class="sep-left">79,3</td><td>102,0</td><td class="rf-val">92,9</td><td class="pos-val">+14,8</td><td class="neg-val">-0,8%</td><td class="neg-val">-9,0</td><td class="neg-val">-8,8%</td></tr>
 </tbody>
 </table></div></div>
 
@@ -257,91 +246,193 @@ function showRegion(key, btn) {
 }
 
 const COMMENTS = {
-  'arg-a': { title: 'Frenos & Discos — Argentina', subtitle: 'Vs LE: -1,2%  ·  Vs BUD: -€1,5M  ·  vs LY +28%',
-    kpis: [{label:'vs LE: -1,2%',cls:'neg'},{label:'-€1,5M vs BUD',cls:'neg'},{label:'+28% vs LY',cls:'pos'},{label:'62K unidades',cls:'neu'}],
+
+  // ── ARGENTINA ──
+  'arg-a': { title: 'Frenos & Discos — Argentina', subtitle: 'vs BUD: -€1,5M  ·  vs A25: +28,4%',
+    kpis: [{label:'-€1,5M vs BUD',cls:'neg'},{label:'+28% vs A25',cls:'pos'},{label:'62K unidades',cls:'neu'},{label:'Marzo +28,4%',cls:'pos'}],
     sections: [
-      {title:'Drivers de crecimiento',items:['Discos ventilados premium para SUV: +35% vs LY; categoría líder del mes en línea de frenos.','Frenos para flotas comerciales: nuevo contrato regional aporta €0,4M adicionales en Q1.','Pastillas cerámicas: lanzamiento exitoso en canal independiente, +28% en unidades vs BUD.']},
-      {title:'Desvío vs BUD',items:['Frenos de tambor: -22% vs BUD por sustitución acelerada hacia discos en vehículos medianos.','Retraso en homologación de nueva línea ABS → €0,3M de frenos postergados a Q2.']},
-      {title:'Outlook Q2',items:['Lanzamiento de kit de frenos completo para pickup → proyección €0,5M adicionales.','Acuerdo de exclusividad con cadena de talleres: 120 puntos de venta en Argentina.']}
+      {title:'Drivers de crecimiento',items:['Discos ventilados premium SUV: +35% vs A25; categoría líder del mes, impulsada por renovación de parque pickup.','Frenos para flotas comerciales: nuevo contrato aporta €0,4M adicionales en Q1 FY26.','Pastillas cerámicas: lanzamiento canal independiente con +28% en unidades vs BUD26.']},
+      {title:'Desvío vs BUD',items:['Frenos de tambor: -22% vs BUD26 por sustitución acelerada hacia discos en segmento mediano.','Homologación línea ABS retrasada → €0,3M postergados a Q2 FY26.']},
+      {title:'Outlook Q2 FY26',items:['Kit frenos pickup en lanzamiento → proyección €0,5M adicionales.','Acuerdo exclusividad cadena de talleres: 120 puntos en Argentina.']}
     ]
   },
-  'arg-b': { title: 'Suspensión — Argentina', subtitle: 'Vs LE: +0,2%  ·  Vs BUD: -€1,0M  ·  vs LY +55%',
-    kpis: [{label:'+0,2% vs LE',cls:'pos'},{label:'-€1,0M vs BUD',cls:'neg'},{label:'+55% vs LY',cls:'pos'}],
+  'arg-b': { title: 'Suspensión — Argentina', subtitle: 'vs BUD: -€1,0M  ·  vs A25: +55,0%',
+    kpis: [{label:'-€1,0M vs BUD',cls:'neg'},{label:'+55% vs A25',cls:'pos'},{label:'Marzo +55%',cls:'pos'}],
     sections: [
-      {title:'Drivers',items:['Amortiguadores gas para pickup: categoría de suspensión líder del mes, +40% vs LY.','Promoción "kit completo" (amortiguadores + resortes + bujes) generó +40% en ticket promedio.','Canal e-commerce: +85% en facturación de suspensión vs LY; plataforma propia consolida posición.']},
-      {title:'Desvío vs BUD',items:['Suspensión trasera para sedán: -30% vs BUD por menor parque activo de ese segmento.','Demora en importación de componentes de dirección → €0,4M de suspensión postergados a Q2.']}
+      {title:'Drivers FY26',items:['Amortiguadores gas pickup: +40% vs A25, categoría líder de suspensión en marzo.','Promo "kit completo" (amortiguadores + resortes + bujes): ticket promedio +40%.','E-commerce suspensión: +85% vs A25; plataforma propia consolida posición.']},
+      {title:'Desvío vs BUD',items:['Suspensión trasera sedán: -30% vs BUD26 por menor parque activo del segmento.','Demora importación componentes dirección → €0,4M postergados a Q2.']}
     ]
   },
-  'arg-c': { title: 'Filtros & Lubricantes — Argentina', subtitle: 'Vs LE: +0,9%  ·  Vs BUD: -€0,5M  ·  vs LY -12%',
-    kpis: [{label:'+0,9% vs LE',cls:'pos'},{label:'-€0,5M vs BUD',cls:'neg'},{label:'-12% vs LY',cls:'neg'}],
+  'arg-c': { title: 'Filtros & Lubricantes — Argentina', subtitle: 'vs BUD: -€0,5M  ·  vs A25: -12,0%',
+    kpis: [{label:'-€0,5M vs BUD',cls:'neg'},{label:'-12% vs A25',cls:'neg'},{label:'Marzo -12%',cls:'neg'}],
     sections: [
-      {title:'Contexto',items:['Filtros & Lubricantes: caída por menor rotación de lubricantes sintéticos (-18% unidades) ante suba de precio.','Filtros de aire y aceite: +5% vs LY; categoría más estable dentro de filtros & lubricantes.','Nuevo lubricante semi-sintético 10W40 con lanzamiento en abril → recuperación esperada en Q2.']},
-      {title:'Ventas pendientes',items:['Licitación flotilla municipio norte: €0,08M — resolución esperada abril.','Acuerdo cadena de estaciones de servicio: €0,12M en filtros & lubricantes — en proceso de firma.']}
+      {title:'Contexto',items:['Lubricantes sintéticos: -18% unidades vs A25 por suba de precio que desplaza consumo a semi-sintéticos.','Filtros aire y aceite: +5% vs A25; la línea más estable del portafolio.','Nuevo lubricante 10W40 semi-sintético con lanzamiento en abril → recuperación esperada Q2.']},
+      {title:'Pendientes de cierre',items:['Licitación flotilla municipio norte: €0,08M — fallo esperado abril FY26.','Acuerdo cadena estaciones de servicio: €0,12M en firma.']}
     ]
   },
-  'arg-d': { title: 'Electricidad & Encendido — Argentina', subtitle: 'Vs LE: -3,5%  ·  Vs BUD: +€0,4M  ·  vs LY +320%',
-    kpis: [{label:'-3,5% vs LE',cls:'neg'},{label:'+€0,4M vs BUD',cls:'pos'},{label:'+320% vs LY',cls:'pos'},{label:'Base LY muy baja',cls:'neu'}],
+  'arg-d': { title: 'Electricidad & Encendido — Argentina', subtitle: 'vs BUD: +€0,4M  ·  vs A25: +320,0%',
+    kpis: [{label:'+€0,4M vs BUD',cls:'pos'},{label:'+320% vs A25',cls:'pos'},{label:'Base A25 muy baja',cls:'neu'}],
     sections: [
-      {title:'Contexto del crecimiento',items:['Electricidad & Encendido: base comparativa muy baja en LY por desabastecimiento puntual en Q1 2024.','Bujías iridio: +45% vs BUD en unidades; demanda sostenida en talleres independientes.','Sensores de oxígeno: nuevo proveedor homologado mejora competitividad en electricidad & encendido.']},
-      {title:'Desvío vs LE',items:['Alternadores remanufacturados: demora en restock → -€0,1M vs LE en la línea de electricidad.','Bobinas de encendido para vehículos europeos: menor demanda de lo proyectado.']}
+      {title:'Contexto del crecimiento',items:['Base comparativa muy baja en A25 por desabastecimiento puntual en Q1 FY25.','Bujías iridio: +45% vs BUD26 en unidades; demanda sostenida en talleres independientes.','Sensores de oxígeno: nuevo proveedor homologado mejora precio y competitividad.']},
+      {title:'Desvío vs BUD',items:['Alternadores remanufacturados: demora restock → -€0,1M vs BUD.','Bobinas encendido vehículos europeos: menor demanda de lo proyectado en Q1.']}
     ]
   },
-  'cs-a': { title: 'Frenos & Discos — Cono Sur', subtitle: 'Vs LE: +2,5%  ·  Vs BUD: +€0,2M  ·  vs LY +12%',
-    kpis: [{label:'+2,5% vs LE',cls:'pos'},{label:'+€0,2M vs BUD',cls:'pos'},{label:'+12% vs LY',cls:'pos'}],
+  'arg-e': { title: 'Accesorios — Argentina', subtitle: 'vs BUD: -€0,1M  ·  vs A25: -18,0%',
+    kpis: [{label:'-€0,1M vs BUD',cls:'neg'},{label:'-18% vs A25',cls:'neg'},{label:'Acumulado Q1 -4%',cls:'neg'}],
     sections: [
-      {title:'Drivers — Chile',items:['Frenos & Discos: crecimiento liderado por canal independiente en zona sur del país (+38% vs LY).','Discos ranurados para camioneta: categoría de mayor rotación de frenos; acuerdo con importador regional suma €0,2M.','Ajuste de base: en Mar 24 hubo RR de +€0,1M → crecimiento normalizado de frenos es +19% vs LY.']},
-      {title:'Distribuidores',items:['Dist. Sur: +42% en facturación de frenos, incorpora nueva línea de pastillas premium.','Dist. Pacífico: +28% en NS de frenos & discos; foco en flotas mineras del norte.']}
+      {title:'Contexto',items:['Caída explicada por menor activación de punto de venta en canal multimarca durante Q1 FY26.','Accesorios de interior: -25% vs A25 por presión de precios de importados asiáticos.','Accesorios de exterior: comportamiento más estable, -8% vs A25.']},
+      {title:'Acciones correctivas Q2',items:['Activación trade marketing en puntos de venta clave: plan aprobado para abril.','Bundle accesorios + servicio en talleres propios → lanzamiento mayo FY26.']}
     ]
   },
-  'cs-b': { title: 'Suspensión — Cono Sur', subtitle: 'Vs LE: -6,5%  ·  Vs BUD: +€0,6M  ·  vs LY +48%',
-    kpis: [{label:'-€0,2M vs LE',cls:'neg'},{label:'+€0,6M vs BUD',cls:'pos'},{label:'+48% vs LY',cls:'pos'}],
+
+  // ── CONO SUR ──
+  'cs-a': { title: 'Frenos & Discos — Cono Sur', subtitle: 'vs BUD: +€0,2M  ·  vs A25: +12,0%',
+    kpis: [{label:'+€0,2M vs BUD',cls:'pos'},{label:'+12% vs A25',cls:'pos'},{label:'Chile +19% norm.',cls:'pos'}],
     sections: [
-      {title:'Desvío vs LE — AUR distribuidores',items:['Suspensión: desvío de -€0,2M vs LE por menor AUR en venta masiva a distribuidor regional.','AUR realizado: CLP 28.000 vs CLP 32.000 proyectado. El menor AUR de suspensión no fue considerado en el LE.']},
-      {title:'Chile — Marzo',items:['Amortiguadores gas para 4x4 y pickup: +60% vs LY en suspensión; demanda muy fuerte.','Completado proceso de nueva colección de resortes N1\'2025.','E-commerce: +115% en facturación de suspensión vs año anterior.']}
+      {title:'Drivers — Chile FY26',items:['Canal independiente zona sur: +38% vs A25; liderazgo del crecimiento regional.','Discos ranurados pickup: categoría de mayor rotación; acuerdo importador suma €0,2M.','Ajuste base: RR +€0,1M en Mar A25 → crecimiento normalizado +19% vs A25.']},
+      {title:'Distribuidores',items:['Dist. Sur: +42% facturación frenos FY26; nueva línea pastillas premium incorporada.','Dist. Pacífico: +28% NS frenos; foco en flotas mineras zona norte.']}
     ]
   },
-  'cs-d': { title: 'Electricidad & Encendido — Cono Sur', subtitle: 'Vs LE: +9,5%  ·  Vs BUD: +€0,2M  ·  vs LY +2%',
-    kpis: [{label:'+9,5% vs LE',cls:'pos'},{label:'+€0,2M vs BUD',cls:'pos'},{label:'+2% vs LY',cls:'pos'}],
+  'cs-b': { title: 'Suspensión — Cono Sur', subtitle: 'vs BUD: +€0,6M  ·  vs A25: +48,0%',
+    kpis: [{label:'+€0,6M vs BUD',cls:'pos'},{label:'+48% vs A25',cls:'pos'},{label:'AUR menor vs BUD',cls:'neg'}],
     sections: [
-      {title:'Drivers',items:['Electricidad & Encendido: bujías y sensores lideran crecimiento en Chile (+22% vs LY).','Temporada de revisión técnica vehicular impulsó demanda de sensores de emisiones en Q1.','Nuevo distribuidor zona norte suma €0,1M mensuales en línea de electricidad & encendido.']}
+      {title:'Desvío AUR en distribuidores',items:['AUR realizado: CLP 28.000 vs CLP 32.000 proyectado en BUD26; impacto -€0,2M en margen.','Venta masiva distribuidor regional en Q1 FY26 no contemplada en BUD.']},
+      {title:'Chile — Marzo FY26',items:['Amortiguadores gas 4x4 y pickup: +60% vs A25; demanda muy fuerte por renovación parque.','Nueva colección resortes N1 FY26 completada.','E-commerce suspensión: +115% vs A25.']}
     ]
   },
-  'and-a': { title: 'Frenos & Discos — Hub Andino', subtitle: 'Vs LE: +1,5%  ·  Vs BUD: -€0,3M  ·  vs LY +18%',
-    kpis: [{label:'+1,5% vs LE',cls:'pos'},{label:'-€0,3M vs BUD',cls:'neg'},{label:'+18% vs LY',cls:'pos'}],
+  'cs-c': { title: 'Filtros & Lubricantes — Cono Sur', subtitle: 'vs BUD: -€0,1M  ·  vs A25: -6,0%',
+    kpis: [{label:'-€0,1M vs BUD',cls:'neg'},{label:'-6% vs A25',cls:'neg'},{label:'Q1 -4,5%',cls:'neg'}],
     sections: [
-      {title:'Drivers',items:['Frenos & Discos: Colombia y Perú lideran el crecimiento regional; +25% y +20% vs LY respectivamente.','Discos para flotas de transporte urbano: licitación ganada aporta €0,3M en Q1 a la línea de frenos.','Ecuador: recuperación parcial de frenos & discos tras problemas logísticos de Q4 2024.']},
-      {title:'Desvío vs BUD',items:['Venezuela: €0,2M menos vs BUD en frenos por restricciones de pago internacional.','Bolivia: retraso en apertura de nuevo punto de venta → postergado a Q2.']}
+      {title:'Contexto',items:['Caída concentrada en lubricantes premium: competencia de importados presiona AUR en Chile.','Filtros combustible: estables vs A25; buen desempeño en canal taller independiente.','Ajuste de mix hacia productos de menor precio en contexto de consumo ajustado.']},
+      {title:'Acciones Q2',items:['Negociación con distribuidor local para ampliar presencia en canal lubricentros.','Nuevo kit filtros + lubricante: bundle para taller → activación prevista mayo FY26.']}
     ]
   },
-  'and-c': { title: 'Filtros & Lubricantes — Hub Andino', subtitle: 'Vs LE: +4,5%  ·  Vs BUD: -€0,2M  ·  vs LY +8%',
-    kpis: [{label:'+4,5% vs LE',cls:'pos'},{label:'-€0,2M vs BUD',cls:'neg'},{label:'+8% vs LY',cls:'pos'}],
+  'cs-d': { title: 'Electricidad & Encendido — Cono Sur', subtitle: 'vs BUD: +€0,2M  ·  vs A25: +2,0%',
+    kpis: [{label:'+€0,2M vs BUD',cls:'pos'},{label:'+2% vs A25',cls:'pos'},{label:'Q1 +5%',cls:'pos'}],
     sections: [
-      {title:'Drivers',items:['Filtros & Lubricantes: fuerte demanda en Colombia de lubricantes para motos (+40% vs LY) — segmento en expansión andina.','Filtros de combustible: crecimiento en Perú por parque vehicular más antiguo y mayor recambio.','Nueva línea de lubricantes industriales lanzada en Q4 2024 ya aporta €0,1M mensuales.']}
+      {title:'Drivers FY26',items:['Bujías y sensores: +22% vs A25 en Chile; liderazgo del crecimiento en la categoría.','Revisión técnica vehicular impulsó demanda de sensores de emisiones en Q1 FY26.','Nuevo distribuidor zona norte: +€0,1M/mes desde inicio FY26.']}
     ]
   },
-  'bra-a': { title: 'Frenos & Discos — Brasil', subtitle: 'Vs LE: -2,0%  ·  Vs BUD: -€1,1M  ·  vs LY +9,5%',
-    kpis: [{label:'-2,0% vs LE',cls:'neg'},{label:'-€1,1M vs BUD',cls:'neg'},{label:'+9,5% vs LY',cls:'pos'}],
+  'cs-e': { title: 'Accesorios — Cono Sur', subtitle: 'vs BUD: +€0,3M  ·  vs A25: +38,0%',
+    kpis: [{label:'+€0,3M vs BUD',cls:'pos'},{label:'+38% vs A25',cls:'pos'},{label:'Q1 +55% vs BUD',cls:'pos'}],
     sections: [
-      {title:'Contexto',items:['Frenos & Discos: crecimiento sostenido pero menor penetración en canal autopeças vs lo planificado.','Discos para veículos populares segmento A/B: alta competencia local presiona AUR de frenos → menor ticket.','Discos premium importados: demanda estable en concesionarias multimarca, +15% vs LY.']},
-      {title:'Desvío vs BUD',items:['Canal autopeças: -€0,6M vs BUD en frenos por mayor competencia de fabricantes locales.','Retraso en certificación INMETRO de nueva línea de frenos → €0,3M postergados a Q2.','Tipo de cambio BRL/EUR desfavorable impacta €0,2M vs BUD.']},
-      {title:'Outlook Q2',items:['Certificación INMETRO de frenos esperada para mayo → habilita canal distribución masiva.','Negociación activa con red de talleres especializada: 200+ puntos de servicio.']}
+      {title:'Drivers',items:['Accesorios 4x4 y pickup en Chile: categoría en explosión por renovación parque.','Nuevo acuerdo con tienda especializada outdoor: +€0,2M en Q1 FY26.','Programa de fidelización canal taller: +30% en recompra de accesorios vs A25.']},
+      {title:'Outlook Q2',items:['Temporada invierno impulsa accesorios 4x4 y nieve → expectativa +15% vs Q1 FY26.']}
     ]
   },
-  'bra-b': { title: 'Suspensión — Brasil', subtitle: 'Vs LE: +1,5%  ·  Vs BUD: -€0,6M  ·  vs LY +14%',
-    kpis: [{label:'+1,5% vs LE',cls:'pos'},{label:'-€0,6M vs BUD',cls:'neg'},{label:'+14% vs LY',cls:'pos'}],
+
+  // ── HUB ANDINO ──
+  'and-a': { title: 'Frenos & Discos — Hub Andino', subtitle: 'vs BUD: -€0,3M  ·  vs A25: +18,0%',
+    kpis: [{label:'-€0,3M vs BUD',cls:'neg'},{label:'+18% vs A25',cls:'pos'},{label:'Colombia +25%',cls:'pos'}],
     sections: [
-      {title:'Drivers',items:['Suspensión: amortiguadores para veículos populares lideran volumen; Gol/Ônix representan 45% del mix de suspensión.','Kit suspensión delantera completo: nuevo formato lanzado en febrero reduce tiempo de instalación → alta aceptación.','Exportación a Paraguay: +€0,1M en Q1 en suspensión, canal en desarrollo.']},
-      {title:'Desvío vs BUD',items:['Molas traseiras para caminhonetes: menor demanda de suspensión por desaceleración del agronegócio en Q1.','Componentes importados de suspensión: impacto cambiario de €0,2M vs BUD.']}
+      {title:'Drivers FY26',items:['Colombia y Perú lideran: +25% y +20% vs A25 respectivamente.','Licitación flotas transporte urbano: €0,3M en Q1 FY26.','Ecuador: recuperación parcial tras problemas logísticos Q4 FY25.']},
+      {title:'Desvío vs BUD',items:['Venezuela: -€0,2M vs BUD por restricciones pago internacional vigentes en FY26.','Bolivia: retraso apertura punto de venta → postergado Q2 FY26.']}
     ]
   },
-  'mex-a': { title: 'Frenos & Discos — México', subtitle: 'Vs LE: +2,0%  ·  Vs BUD: -€1,0M  ·  vs LY +16%',
-    kpis: [{label:'+2,0% vs LE',cls:'pos'},{label:'-€1,0M vs BUD',cls:'neg'},{label:'+16% vs LY',cls:'pos'}],
+  'and-b': { title: 'Suspensión — Hub Andino', subtitle: 'vs BUD: -€0,1M  ·  vs A25: +22,0%',
+    kpis: [{label:'-€0,1M vs BUD',cls:'neg'},{label:'+22% vs A25',cls:'pos'},{label:'Q1 -5% vs BUD',cls:'neg'}],
     sections: [
-      {title:'Drivers',items:['Frenos & Discos: nearshoring impulsa mayor parque de pickups y camiones ligeros en zona norte → demanda creciente.','Canal distribución Monterrey y Bajío: +28% vs LY en frenos; zonas industriales lideran.','Discos para vehículos americanos (F-150, Silverado): +40% vs LY, categoría de mayor crecimiento en frenos.']},
-      {title:'Desvío vs BUD',items:['CDMX: -€0,5M vs BUD en frenos por mayor competencia de producto asiático en canal tradicional.','Retraso en apertura de CEDIS norte → €0,3M de frenos & discos postergados a Q2.']},
-      {title:'Outlook Q2',items:['CEDIS norte operativo en mayo → habilitará distribución de frenos en 6 estados adicionales.','Acuerdo con cadena de autopartes líder en proceso de firma: 180+ tiendas.']}
+      {title:'Contexto FY26',items:['Colombia: amortiguadores gas lideran crecimiento +30% vs A25; moto-taxis también aportan.','Perú: suspensión para vehículos de trabajo (pickup y furgones) en alza +18% vs A25.','Ecuador: leve recuperación, aún -5% vs A25 por impacto macroeconómico.']},
+      {title:'Desvío vs BUD',items:['Mix menos favorable que BUD por mayor participación de Ecuador en Q1 FY26.','Demora en homologación local de nuevos modelos → €0,1M postergados.']}
     ]
   },
+  'and-c': { title: 'Filtros & Lubricantes — Hub Andino', subtitle: 'vs BUD: -€0,2M  ·  vs A25: +8,0%',
+    kpis: [{label:'-€0,2M vs BUD',cls:'neg'},{label:'+8% vs A25',cls:'pos'},{label:'Colombia motos +40%',cls:'pos'}],
+    sections: [
+      {title:'Drivers FY26',items:['Colombia: lubricantes para motos +40% vs A25 — segmento en expansión acelerada.','Perú: filtros combustible creciendo por parque vehicular antiguo y mayor recambio.','Lubricantes industriales lanzados en Q4 FY25: ya aportan €0,1M/mes en FY26.']},
+      {title:'Desvío vs BUD',items:['Mix regional desfavorable: Ecuador y Bolivia underperformando vs BUD26.','Aranceles de importación en Colombia impactan €0,1M en Q1 FY26.']}
+    ]
+  },
+  'and-d': { title: 'Electricidad & Encendido — Hub Andino', subtitle: 'vs BUD: -€0,2M  ·  vs A25: -5,0%',
+    kpis: [{label:'-€0,2M vs BUD',cls:'neg'},{label:'-5% vs A25',cls:'neg'},{label:'Q1 -3%',cls:'neg'}],
+    sections: [
+      {title:'Contexto',items:['Caída en Ecuador y Bolivia explica el desvío: -15% vs A25 en ambos mercados.','Colombia: estable con leve crecimiento +3% vs A25 en bujías y sensores.','Competencia de producto asiático con precio agresivo en el canal.',]},
+      {title:'Acciones Q2',items:['Refuerzo de distribución en Colombia con nuevo socio logístico.','Campaña de precio en bujías iridio para recuperar participación vs asiáticos.']}
+    ]
+  },
+  'and-e': { title: 'Accesorios — Hub Andino', subtitle: 'vs BUD: +€0,0M  ·  vs A25: +12,0%',
+    kpis: [{label:'Alineado vs BUD',cls:'neu'},{label:'+12% vs A25',cls:'pos'},{label:'Q1 +4%',cls:'pos'}],
+    sections: [
+      {title:'Drivers',items:['Colombia: accesorios para motos en fuerte crecimiento +35% vs A25; mercado en expansión.','Perú: accesorios camionetas y furgones de trabajo +18% vs A25.','Ecuador: estable, compensando la caída en otras categorías.']}
+    ]
+  },
+
+  // ── BRASIL ──
+  'bra-a': { title: 'Frenos & Discos — Brasil', subtitle: 'vs BUD: -€1,1M  ·  vs A25: +9,5%',
+    kpis: [{label:'-€1,1M vs BUD',cls:'neg'},{label:'+9,5% vs A25',cls:'pos'},{label:'Canal autopeças presión',cls:'neg'}],
+    sections: [
+      {title:'Contexto FY26',items:['Crecimiento sostenido pero menor penetración en canal autopeças vs BUD26.','Discos segmento A/B: alta competencia local presiona AUR → menor ticket promedio.','Discos premium concesionarias multimarca: estables +15% vs A25.']},
+      {title:'Desvío vs BUD',items:['Canal autopeças: -€0,6M vs BUD por competencia fabricantes locales con precio agresivo.','Certificación INMETRO retrasada → €0,3M postergados a Q2 FY26.','Impacto cambiario BRL/EUR: -€0,2M vs BUD26.']},
+      {title:'Outlook Q2 FY26',items:['INMETRO esperada mayo → habilita canal distribución masiva.','Negociación red de talleres: 200+ puntos de servicio.']}
+    ]
+  },
+  'bra-b': { title: 'Suspensión — Brasil', subtitle: 'vs BUD: -€0,6M  ·  vs A25: +14,0%',
+    kpis: [{label:'-€0,6M vs BUD',cls:'neg'},{label:'+14% vs A25',cls:'pos'},{label:'Gol/Ônix 45% mix',cls:'neu'}],
+    sections: [
+      {title:'Drivers FY26',items:['Amortiguadores veículos populares lideran: Gol/Ônix representan 45% del mix.','Kit suspensión delantera completo: nuevo formato reduce tiempo de instalación → alta adopción.','Exportación a Paraguay: +€0,1M en Q1 FY26; canal en desarrollo.']},
+      {title:'Desvío vs BUD',items:['Molas traseiras caminhonetes: menor demanda por desaceleración del agronegócio en Q1 FY26.','Componentes importados: impacto cambiario €0,2M vs BUD26.']}
+    ]
+  },
+  'bra-c': { title: 'Filtros & Lubricantes — Brasil', subtitle: 'vs BUD: -€0,4M  ·  vs A25: +6,0%',
+    kpis: [{label:'-€0,4M vs BUD',cls:'neg'},{label:'+6% vs A25',cls:'pos'},{label:'Q1 -7,5% vs BUD',cls:'neg'}],
+    sections: [
+      {title:'Contexto FY26',items:['Lubricantes: crecimiento moderado +5% vs A25 pero por debajo del BUD26 por menor actividad industrial.','Filtros: +8% vs A25 en canal taller independiente; buen desempeño.','Presión de márgenes por impacto cambiario en productos importados.']},
+      {title:'Acciones Q2',items:['Negociación con redes de lubricentros para ampliar distribución.','Nuevo lubricante para motores flex: lanzamiento previsto para abril FY26.']}
+    ]
+  },
+  'bra-d': { title: 'Electricidad & Encendido — Brasil', subtitle: 'vs BUD: -€0,2M  ·  vs A25: +22,0%',
+    kpis: [{label:'-€0,2M vs BUD',cls:'neg'},{label:'+22% vs A25',cls:'pos'},{label:'Q1 +4,5%',cls:'pos'}],
+    sections: [
+      {title:'Drivers FY26',items:['Sensores y bujías: +22% vs A25 impulsado por renovación de parque vehicular.','Lanzamiento sensor de temperatura motores flex → buena acogida en taller independiente.','E-commerce electricidad: +65% vs A25 en plataforma propia FY26.']},
+      {title:'Desvío vs BUD',items:['Alternadores y arranques: underperforming vs BUD26 por menor demanda flotas.','Impacto cambiario en componentes importados: -€0,2M vs BUD26.']}
+    ]
+  },
+  'bra-e': { title: 'Accesorios — Brasil', subtitle: 'vs BUD: +€0,2M  ·  vs A25: +18,0%',
+    kpis: [{label:'+€0,2M vs BUD',cls:'pos'},{label:'+18% vs A25',cls:'pos'},{label:'Q1 +10,5% vs BUD',cls:'pos'}],
+    sections: [
+      {title:'Drivers FY26',items:['Accesorios personalización: +30% vs A25; tendencia de customización en alza en Brasil.','Canal e-commerce accesorios: +80% vs A25; plataforma propia FY26 lidera.','Accesorios pickup y SUV: +25% vs A25 por mayor parque en Nordeste y Centro-Oeste.']},
+      {title:'Outlook Q2',items:['Lanzamiento línea premium accesorios con marca propia → proyección +€0,3M en Q2.']}
+    ]
+  },
+
+  // ── MÉXICO ──
+  'mex-a': { title: 'Frenos & Discos — México', subtitle: 'vs BUD: -€1,0M  ·  vs A25: +16,0%',
+    kpis: [{label:'-€1,0M vs BUD',cls:'neg'},{label:'+16% vs A25',cls:'pos'},{label:'Nearshoring driver',cls:'pos'}],
+    sections: [
+      {title:'Drivers FY26',items:['Nearshoring impulsa mayor parque pickups y camiones ligeros zona norte → demanda creciente.','Monterrey y Bajío: +28% vs A25; zonas industriales lideran el crecimiento.','Discos vehículos americanos (F-150, Silverado): +40% vs A25.']},
+      {title:'Desvío vs BUD',items:['CDMX: -€0,5M vs BUD por mayor competencia producto asiático canal tradicional.','CEDIS norte retrasado → €0,3M postergados a Q2 FY26.']},
+      {title:'Outlook Q2 FY26',items:['CEDIS norte operativo en mayo → distribución en 6 estados adicionales.','Acuerdo cadena autopartes: 180+ tiendas en firma.']}
+    ]
+  },
+  'mex-b': { title: 'Suspensión — México', subtitle: 'vs BUD: -€0,7M  ·  vs A25: +20,0%',
+    kpis: [{label:'-€0,7M vs BUD',cls:'neg'},{label:'+20% vs A25',cls:'pos'},{label:'Q1 -10% vs BUD',cls:'neg'}],
+    sections: [
+      {title:'Contexto FY26',items:['Crecimiento vs A25 sólido pero BUD26 era muy agresivo.','Pickup y SUV: +30% vs A25; categorías dominantes en mix de suspensión.','Amortiguadores para flota logística: nuevo segmento, +€0,2M en Q1 FY26.']},
+      {title:'Desvío vs BUD',items:['BUD26 sobre-estimó penetración en canal mayorista.','Impacto arancelario importaciones: €0,3M de costos adicionales en Q1 FY26.']}
+    ]
+  },
+  'mex-c': { title: 'Filtros & Lubricantes — México', subtitle: 'vs BUD: -€0,5M  ·  vs A25: +12,0%',
+    kpis: [{label:'-€0,5M vs BUD',cls:'neg'},{label:'+12% vs A25',cls:'pos'},{label:'Q1 -10,5% vs BUD',cls:'neg'}],
+    sections: [
+      {title:'Contexto FY26',items:['Lubricantes sintéticos: +15% vs A25 en canal taller especializado.','Filtros de aire: +20% vs A25 impulsado por contaminación urbana y renovación de parque.','Canal mayorista: underperforming vs BUD26 por entrada de nuevos competidores.']},
+      {title:'Acciones Q2',items:['Acuerdo con Autozone México para filtros premium → 150+ tiendas activadas.','Promo lubricante + filtro en cambio de aceite: activación mayo FY26.']}
+    ]
+  },
+  'mex-d': { title: 'Electricidad & Encendido — México', subtitle: 'vs BUD: -€0,1M  ·  vs A25: +35,0%',
+    kpis: [{label:'-€0,1M vs BUD',cls:'neg'},{label:'+35% vs A25',cls:'pos'},{label:'Q1 +6,5%',cls:'pos'}],
+    sections: [
+      {title:'Drivers FY26',items:['Bujías iridio: +40% vs A25; demanda sostenida por renovación de parque importado.','Sensores TPMS: nuevo segmento en México FY26, +€0,2M en Q1.','Canal taller especializado: +28% vs A25 en electricidad y encendido.']},
+      {title:'Desvío vs BUD',items:['Módulos de ignición: demora en importación → €0,1M postergados a Q2 FY26.']}
+    ]
+  },
+  'mex-e': { title: 'Accesorios — México', subtitle: 'vs BUD: +€0,1M  ·  vs A25: +8,0%',
+    kpis: [{label:'+€0,1M vs BUD',cls:'pos'},{label:'+8% vs A25',cls:'pos'},{label:'Q1 +4%',cls:'pos'}],
+    sections: [
+      {title:'Drivers FY26',items:['Accesorios pickup zona norte: nearshoring genera demanda de personalización laboral y utilitaria.','Canal e-commerce accesorios: +45% vs A25 en plataforma propia.','Bundle accesorios + instalación en taller: nueva oferta FY26 con buena adopción.']},
+      {title:'Outlook Q2',items:['Temporada calor impulsa accesorios de climatización y protección → expectativa +10% Q2.']}
+    ]
+  },
+
 };
 
 let activeBtn = null;
@@ -360,8 +451,7 @@ function openComment(key, event) {
 function closeComment() { document.getElementById('cmt-overlay').classList.remove('open'); if (activeBtn) { activeBtn.classList.remove('active'); activeBtn = null; } }
 function closeOnOverlay(e) { if (e.target === document.getElementById('cmt-overlay')) closeComment(); }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeComment(); });
-document.getElementById('exportBtn').addEventListener('click', () => showToast('Demo mode — exportación no disponible en versión pública'));
-function showToast(msg, d=3000) { const t = document.getElementById('exportToast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), d); }
+
 </script>
 </body>
 </html>
